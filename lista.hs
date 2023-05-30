@@ -6,7 +6,8 @@ dist_pontos (x1, y1) (x2, y2) = sqrt((x2 - x1)^2 + (y2 - y1)^2)
 
 {-2) Faça uma função para verificar se um ano informado é bissexto ou não.-}
 
-
+ano_bissexto :: Int -> Bool
+ano_bissexto x = x `mod` 4 == 0
 
 {-3) Defina uma função que recebe três números inteiros representando,
 respectivamente, um dia, um mês e um ano e verifica se os números formam uma
